@@ -15,7 +15,7 @@ class Retrieval:
         
         retrieved_docs = []
         for doc_id, metadata in zip(results["ids"], results["metadatas"]):
-            retrieved_docs.append({"id": doc_id, "metadata": metadata})
+            retrieved_docs.append(metadata)
         
         return retrieved_docs
 
